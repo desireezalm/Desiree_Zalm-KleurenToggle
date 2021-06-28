@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html5>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Winc Academy Front End Development Module Eindopdracht 3: Kleuren Toggle">
+        <meta name="keywords" content="kleuren toggle menu">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/397734afb5.js" crossorigin="anonymous"></script>
+        <script defer src="JS/script.js"></script>
+        <title> Eindopdracht 3 </title>
+    </head>
+    <body>
+        <main>
+            <nav class="nav-main">
+                <div class="container-toggle-nav">
+                    <div class="btn-toggle-nav" onclick="toggleNav()">
+                        <div class="menu-icon">                    
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About me</a></li>                
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <aside class="nav-sidebar">
+                <ul>
+                    <li><input type="radio" id="grey" name="color" onclick="changeColor('a')">
+                        <label for="grey" class="label-grey">Grey</label></li>
+                    <li><input type="radio" id="red" name="color" onclick="changeColor('b')">
+                        <label for="red" class="label-red">Red</label></li>
+                    <li><input type="radio" id="yellow" name="color" onclick="changeColor('c')">
+                        <label for="yellow" class="label-yellow">Yellow</label></li>
+                    <li><input type="radio" id="purple" name="color" onclick="changeColor('d')">
+                        <label for="purple" class="label-purple">Purple</label></li>
+                    <li><input type="radio" id="green" name="color" onclick="changeColor('e')">
+                        <label for="green" class="label-green">Green</label></li>
+
+                    
+                </ul>
+            </aside>
+            <p class="par1">
+                The current background color is 
+            </p>            
+        </main>
+    </body>
+</html5>
